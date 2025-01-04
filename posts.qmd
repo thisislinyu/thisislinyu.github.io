@@ -1,6 +1,6 @@
 ---
-title: "Posts"
-subtitle: "Random thoughts"
+title: "Some Random Posts 🌈"
+# subtitle: "️"
 listing:
   contents: 
     - posts/yoga/index.qmd

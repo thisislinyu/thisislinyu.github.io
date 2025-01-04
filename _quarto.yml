@@ -14,7 +14,8 @@ website:
     right:
       # - about.qmd
       - DLSPH.qmd
-      - posts.qmd
+      - href: posts.qmd
+        text: Posts
       - href: index.qmd
         text: Home
 
