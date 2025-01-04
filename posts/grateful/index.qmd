@@ -1,0 +1,13 @@
+---
+title: "Be grateful"
+image: grateful.jpg
+description: |
+ be grateful
+listing:
+  contents: .
+  type: table
+  sort: "title tags desc"
+  fields: [title, description,tags] # Ensures the table has the listed fields
+---
+
+记录一些琐碎生活中的小美好们💕

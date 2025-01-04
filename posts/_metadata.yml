@@ -1,8 +1,14 @@
-# options specified here will apply to all posts in this folder
-
 # freeze computational output
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)
-freeze: auto
+freeze: true
 
 # Enable banner style title blocks
-title-block-banner: false
+title-block-banner: true
+
+# no table of contents
+toc: true
+
+# my author info
+    # orcid: 0000-0002-5300-3075
+    # affiliation: Master of Environmental Data Science Program @ The Bren School (UCSB) & The National Center for Ecological Analysis and Synthesis
+    # affiliation-url: https://ucsb-meds.github.io/ 

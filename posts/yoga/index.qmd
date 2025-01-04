@@ -1,0 +1,16 @@
+---
+title: "🧘"
+image: yoga.jpg
+description: |
+  my yoga practice cheatsheet
+listing:
+  contents: .
+  type: table
+  sort: "category desc"
+  fields: [title, description,category] #tags # Ensures the table has the listed fields
+  filter-ui: true
+# [Home](../../index.qmd) > [Posts](../../posts.qmd) > [Yoga Posts](index.qmd)
+---
+[← Back to Posts](../../posts.qmd)            
+
+Welcome to my collection of yoga posts! 🌿

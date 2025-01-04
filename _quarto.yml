@@ -5,6 +5,9 @@ project:
 website:
   title: "Lin Yu"
   favicon: logos/favicon.png 
+  page-navigation: true
+  back-to-top-navigation: true
+  #page-navigation: true
   navbar:
     title: false # override printing your website `title` (e.g. "Sam Csik" on line 6) in the top left corner of your navbar
     # logo: logos/favicon.png
@@ -30,11 +33,18 @@ website:
     
 format:
   html:
+    resources: dis-lazyload.js
     page-layout: full
-    sidebar: false
-    theme: 
-      - styles.scss
+    sidebar: true
+    theme:
+      light: styles.scss
+    #  dark: styles.scss
+    # theme:
+    #   light: default
+    #   dark: default
+      #- styles.scss
     mainfont: Josefin Sans
     toc: true
+  
 
 editor: source

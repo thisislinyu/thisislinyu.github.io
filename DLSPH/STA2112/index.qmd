@@ -32,3 +32,9 @@ draft: false
 新增STA2212 final project. 这次我们选了Cox 1972年的发表的Regression Models and Life-Tables.主要介绍了KM，log-rank, Cox regression, 以及对cox regression 的PH assumption进行了讨论。\
 
 -   我的[幻灯片](2024_04_02_STA2212_Cox_1972_final_project.pdf)
+
+course websites:
+
+-   Fall 2024: (https://jlgrons.github.io/STA2112-MathStat/index.html)
+
+-   Winter 2024: https://utstat.toronto.edu/reid/html/sta/sta2212s.html

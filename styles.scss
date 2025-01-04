@@ -1,68 +1,106 @@
 /*-- scss:defaults --*/
 
-// Import Google fonts
-//@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-
-// fonts
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-family-serif: 'Sanchez', serif;
-$font-family-monospace: 'Roboto Mono', monospace;
+// Font variables
+$font-family-header: 'Merriweather', serif; // 标题字体
+$font-family-body: 'Roboto', sans-serif; // 正文字体
 
 
-// Nature-inspired Colors
-$dark-green: #7A856D;
-$light-green: #C5D1BA;
-$cream: #F0EFEA;
-$gray: #6E665B;
-$earthy-brown: #A67F59;
-$muted-olive: #9C9464;
-$burnt-orange: #D08C60; // Warm, Morandi-style burnt orange
+$background-color: #F6F1F3; // 浅米灰，背景色
+$primary-color: #9F7E94; // 主色：紫灰色
+$secondary-color: #A8B583; // 次色：橄榄绿
+$highlight-color: #EBA3A5; // 点缀色：柔粉红
+$accent-color: #F4E4ED; // 强调色：浅紫奶白
+$text-color: black; // 文字颜色：深紫灰
+$link-hover-color: $secondary-color; // 链接悬停色：橄榄绿
+$nav-hover-color: #563D4C; // 导航悬停色：深紫色
+$hyperlink-color: #8B5FBF;
+// 设置颜色变量
+$navbar-bg: $primary-color; // 导航栏背景
+$navbar-fg: $accent-color; // 导航栏前景文字颜色
+$navbar-hl: $nav-hover-color; // 导航栏悬停高亮色
+$body-bg: $background-color; // 页面背景色
+$footer-bg: $primary-color; // 页脚背景色
+$link-color: $hyperlink-color; // 超链接颜色
 
-// Base document colors
-$navbar-bg: $light-green; // navbar background
-$navbar-fg: $dark-green; // navbar foreground elements
-$navbar-hl: $burnt-orange; // highlight color when hovering over navbar links
-$body-bg: $cream; // page background 
-$body-color: $gray; // page text 
-$footer-bg: $light-green; // footer background
-$link-color: $burnt-orange; // hyperlinks 
+// 全局样式
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family-body; // 全局使用正文字体 Roboto
+}
 
-// Inline code
-$code-bg: $cream; // inline code background color
-$code-color: $muted-olive; // inline code text color
-
-/*-- scss:rules --*/
-
-// header font & color
+// 标题样式
 h1, h2, h3, h4 {
-  color: $dark-green;
+  color: $secondary-color; // 使用次色调（橄榄绿）
+  font-family: $font-family-header; // 标题使用 Merriweather
+  font-weight: 700;
+  line-height: 1.5;
 }
 
-// line beneath h2
-h2 {
-  border-bottom: 3px solid $dark-green;
-  padding-bottom: 0.5rem;
+// 链接样式
+a {
+  color: $secondary-color; // 使用主色调（紫灰色）
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $link-hover-color; // 悬停时变为橄榄绿
+  }
 }
 
-
-
-.title {
-  color: $burnt-orange; // Change title color to burnt orange
+// 高亮样式
+.highlight {
+  color: $highlight-color; // 使用点缀色（柔粉红）
+  font-weight: bold;
 }
 
-.center-text {
-  text-align: center;
+// 导航栏样式
+.navbar {
+  background-color: $navbar-bg; // 主色调背景
+  color: $navbar-fg; // 前景文字颜色
+  font-family: $font-family-body;
+
+  a {
+    color: $navbar-fg; // 导航链接颜色
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $nav-hover-color; // 悬停时橄榄绿
+    }
+  }
 }
 
-.orange-text {
-  color: $burnt-orange; // Change any orange-text class to burnt orange
+// 卡片样式
+.card {
+  background-color: $accent-color; // 浅紫奶白背景
+  border: 1px solid $primary-color; // 主色边框
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand img { 
-  max-height: 50px;
-  width: auto;
+// 按钮样式
+.btn {
+  background-color: $secondary-color; // 默认按钮背景橄榄绿
+  color: $background-color; // 按钮文字颜色为白色
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $highlight-color; // 悬停时柔粉红
+  }
 }
 
+// 分隔线
+.hr {
+  border: 0;
+  border-top: 2px solid $secondary-color; // 分隔线使用橄榄绿
+  margin: 20px 0;
+}

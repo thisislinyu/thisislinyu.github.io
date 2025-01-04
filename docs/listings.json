@@ -2,21 +2,45 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/2023_08_22_workout_cheatsheet/index.html",
-      "/posts/2023_07_03scientific_research_writing/index.html",
-      "/posts/2022-07-24-R-opencpu/index.html"
+      "/posts/yoga/index.html",
+      "/posts/guitar/index.html",
+      "/posts/grateful/index.html"
     ]
   },
   {
     "listing": "/DLSPH.html",
     "items": [
-      "/DLSPH/CHL5225/index.html",
       "/DLSPH/Comps/index.html",
       "/DLSPH/HAD7002/index.html",
       "/DLSPH/CHL5209/index.html",
       "/DLSPH/CHL5260/index.html",
       "/DLSPH/STA2112/index.html",
       "/DLSPH/CHL5208/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/grateful/index.html",
+    "items": [
+      "/posts/grateful/2024.html"
+    ]
+  },
+  {
+    "listing": "/posts/yoga/index.html",
+    "items": [
+      "/posts/yoga/chakras.html",
+      "/posts/yoga/nine_obstacles.html",
+      "/posts/yoga/meditation.html",
+      "/posts/yoga/what_is_yoga.html",
+      "/posts/yoga/veda.html",
+      "/posts/yoga/five_root_causes_of_suffering.html",
+      "/posts/yoga/five_modulations_of_the_mind.html",
+      "/posts/yoga/five_elements_of_body.html",
+      "/posts/yoga/patanjali.html",
+      "/posts/yoga/five_sheaths.html",
+      "/posts/yoga/three_body.html",
+      "/posts/yoga/Ashtanga.html",
+      "/posts/yoga/overview_of_yoga.html",
+      "/posts/yoga/workout.html"
     ]
   }
 ]

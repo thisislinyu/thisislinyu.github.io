@@ -2,15 +2,22 @@
 title: "Posts"
 subtitle: "Random thoughts"
 listing:
-  contents: posts
+  contents: 
+    - posts/yoga/index.qmd
+    - posts/guitar/index.qmd
+    - posts/grateful/index.qmd
+  #fields: [date, title]
   sort: "date desc"
-  type: default
+  type: grid
   # image-align: right
-  max-description-length: 175
+  max-description-length: 0
   date-format: medium
-  categories: true
+  categories: false
   sort-ui: false
   filter-ui: false
 page-layout: full
-title-block-banner: true
+page-navigation: true
+title-block-banner: false
+execute: 
+  freeze: auto
 ---
