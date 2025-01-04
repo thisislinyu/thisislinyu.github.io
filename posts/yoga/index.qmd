@@ -1,8 +1,9 @@
 ---
-title: "🧘"
+title: ""
 image: yoga.jpg
+image-height: 10px
 description: |
-  my yoga practice cheatsheet
+  My yoga practice cheatsheet 🧘
 listing:
   contents: .
   type: table

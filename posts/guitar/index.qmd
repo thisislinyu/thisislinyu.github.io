@@ -1,7 +1,7 @@
 ---
-title: "🎸"
+title: ""
 image: guitar.jpg
 description: |
-  some random notes along my 🎸 learning journey
+  Some random notes along my 🎸 learning journey
 ---
 Content for the guitar post goes here...

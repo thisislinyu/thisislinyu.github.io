@@ -1,6 +1,6 @@
 ---
 title: "DLSPH"
-description: "2024 being grateful"
+description: ""
 subtitle: "一些课程归档"
 listing:
   contents: DLSPH

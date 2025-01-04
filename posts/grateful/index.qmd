@@ -1,13 +1,13 @@
 ---
-title: "Be grateful"
+title: ""
 image: grateful.jpg
 description: |
- be grateful
+ Be grateful💕💕
 listing:
   contents: .
   type: table
   sort: "title tags desc"
-  fields: [title, description,tags] # Ensures the table has the listed fields
+  fields: [title, tags] # Ensures the table has the listed fields
 ---
 
 记录一些琐碎生活中的小美好们💕
