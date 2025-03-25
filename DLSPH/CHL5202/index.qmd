@@ -13,5 +13,5 @@ image: likelihood.jpg
 draft: false
 ---
 
--   My two-page [cheatsheet](CHL5222_Cheat_sheet.pdf)
+The course website can be found [here](https://thisislinyu.github.io/CHL5202/)
 
