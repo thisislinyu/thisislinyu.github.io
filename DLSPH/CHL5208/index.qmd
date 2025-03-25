@@ -30,6 +30,8 @@ Conclusions: The proposed HDSI algorithms show potential in identifying interact
 
 - 2024-08-15 My [final report](FinalReport_LinYu.pdf)
 
+- Github repo is [here](https://github.com/thisislinyu/CHL5208)
+
 
 
 

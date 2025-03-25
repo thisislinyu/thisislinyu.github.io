@@ -4,14 +4,23 @@ image: yoga.jpg
 image-height: 10px
 description: |
   My yoga practice cheatsheet 🧘
+# subtitle: "️"
 listing:
-  contents: .
-  type: table
-  sort: "category desc"
-  fields: [title, description,category] #tags # Ensures the table has the listed fields
-  filter-ui: true
-# [Home](../../index.qmd) > [Posts](../../posts.qmd) > [Yoga Posts](index.qmd)
+  contents: 
+    - asana/index.qmd ## interesting, here the directory is set tot be post/yoga, so do not use absolute path, instead use relative path 
+    - philosophy/index.qmd
+  #fields: [date, title]
+  sort: "date desc"
+  type: grid
+  # image-align: right
+  max-description-length: 0
+  date-format: medium
+  categories: false
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+page-navigation: true
+title-block-banner: false
+execute: 
+  freeze: auto
 ---
-[← Back to Posts](../../posts.qmd)            
-
-Welcome to my collection of yoga posts! 🌿

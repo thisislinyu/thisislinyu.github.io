@@ -13,5 +13,7 @@ image: goal.jpg
 draft: false
 ---
 
--   First-term:[2024/02/29 concpet proposal](2024_02_29_CHL5260_concpet_proposal.pdf)
+-   First year:[2024/02/29 concpet proposal](2024_02_29_CHL5260_concpet_proposal.pdf)
+
+-   Second year:[2024/02/27 my first project](Feb27-2025_LinYu_updated.pdf)
 

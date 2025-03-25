@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-category',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -137,7 +137,7 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
@@ -173,208 +173,56 @@ window.Quarto = {
         
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 
 
 
-<p><a href="../../posts.html">← Back to Posts</a></p>
-<p>Welcome to my collection of yoga posts! 🌿</p>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1736455321051" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../../posts/yoga/asana/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../posts/yoga/asana/asana1.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<div class="card-text listing-description">
+<p>Asana cheatsheet</p>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-<th>
-Description
-</th>
-<th>
-category
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1735772095676" data-listing-reading-time-sort="6" data-listing-word-count-sort="1032" data-listing-title-sort="Chakras: The Spiritual Centers of Energy" data-listing-filename-sort="chakras.qmd">
-<td>
-<a href="../../posts/yoga/chakras.html" class="title listing-title">Chakras: The Spiritual Centers of Energy</a>
-</td>
-<td>
-<span class="listing-description"><strong>Chakras</strong> <em>(轮)</em> are energy wheels or centers of spiritual power in the human body. These centers influence our physical, emotional, and spiitual well-being.</span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="1" data-listing-file-modified-sort="1735769867217" data-listing-reading-time-sort="3" data-listing-word-count-sort="447" data-listing-title-sort="The 9 Obstacles on the Path of Yoga" data-listing-filename-sort="nine_obstacles.qmd">
-<td>
-<a href="../../posts/yoga/nine_obstacles.html" class="title listing-title">The 9 Obstacles on the Path of Yoga</a>
-</td>
-<td>
-<span class="listing-description">Patanjali describes 9 obstacles (Antarayas) that hinder progress on the path of yoga:</span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="2" data-listing-file-modified-sort="1735769861075" data-listing-reading-time-sort="3" data-listing-word-count-sort="458" data-listing-title-sort="Meditation" data-listing-filename-sort="meditation.qmd">
-<td>
-<a href="../../posts/yoga/meditation.html" class="title listing-title">Meditation</a>
-</td>
-<td>
-<span class="listing-description">Meditation is the journey inward to discover your true nature—<strong>happiness</strong>. It is not about concentration, but about cultivating <strong>awareness</strong>.</span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="3" data-listing-file-modified-sort="1735769890227" data-listing-reading-time-sort="3" data-listing-word-count-sort="431" data-listing-title-sort="What is Yoga?" data-listing-filename-sort="what_is_yoga.qmd">
-<td>
-<a href="../../posts/yoga/what_is_yoga.html" class="title listing-title">What is Yoga?</a>
-</td>
-<td>
-<span class="listing-description">Yoga is the journey of moving:<br>
-- From <strong>the gross to the subtle</strong><br>
-- From <strong>the physical to the ethereal</strong><br>
-- From <strong>the individual to the cosmos</strong></span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="4" data-listing-file-modified-sort="1735769886833" data-listing-reading-time-sort="2" data-listing-word-count-sort="331" data-listing-title-sort="Veda" data-listing-filename-sort="veda.qmd">
-<td>
-<a href="../../posts/yoga/veda.html" class="title listing-title">Veda</a>
-</td>
-<td>
-<span class="listing-description">Veda: The Knowledge of Life <em>(吠陀)</em></span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="5" data-listing-file-modified-sort="1735769768431" data-listing-reading-time-sort="2" data-listing-word-count-sort="379" data-listing-title-sort="Five Root Causes of Suffering" data-listing-filename-sort="five_root_causes_of_suffering.qmd">
-<td>
-<a href="../../posts/yoga/five_root_causes_of_suffering.html" class="title listing-title">Five Root Causes of Suffering</a>
-</td>
-<td>
-<span class="listing-description"><em>(Pancha Kleshas)</em></span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="6" data-listing-file-modified-sort="1735769760967" data-listing-reading-time-sort="2" data-listing-word-count-sort="298" data-listing-title-sort="Five Modulations of the Mind" data-listing-filename-sort="five_modulations_of_the_mind.qmd">
-<td>
-<a href="../../posts/yoga/five_modulations_of_the_mind.html" class="title listing-title">Five Modulations of the Mind</a>
-</td>
-<td>
-<span class="listing-description"><em>(Samadhi Pada, First Chapter of Patanjali Yoga Sutras)</em></span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="7" data-listing-file-modified-sort="1735770015325" data-listing-reading-time-sort="2" data-listing-word-count-sort="321" data-listing-title-sort="Five Elements of the Body and Universe" data-listing-filename-sort="five_elements_of_body.qmd">
-<td>
-<a href="../../posts/yoga/five_elements_of_body.html" class="title listing-title">Five Elements of the Body and Universe</a>
-</td>
-<td>
-<span class="listing-description"><em>(Pancha Maha Bhutas)</em></span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="8" data-listing-file-modified-sort="1735769875161" data-listing-reading-time-sort="2" data-listing-word-count-sort="385" data-listing-title-sort="Who is Maharishi Patanjali?" data-listing-filename-sort="patanjali.qmd">
-<td>
-<a href="../../posts/yoga/patanjali.html" class="title listing-title">Who is Maharishi Patanjali?</a>
-</td>
-<td>
-<span class="listing-description">Maharishi Patanjali is revered as the author of the <strong>Patanjali Yoga Sutras</strong>, a foundational text on yoga philosophy. He is celebrated for offering profound insights and…</span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="9" data-listing-file-modified-sort="1735769856452" data-listing-reading-time-sort="3" data-listing-word-count-sort="462" data-listing-title-sort="Five Elements of the Body and Universe" data-listing-filename-sort="five_sheaths.qmd">
-<td>
-<a href="../../posts/yoga/five_sheaths.html" class="title listing-title">Five Elements of the Body and Universe</a>
-</td>
-<td>
-<span class="listing-description">The <strong>Pancha Koshas</strong> describe five layers or coverings of our being, moving progressively from the <strong>gross</strong> to the <strong>subtle</strong>, from the <strong>body</strong> to <strong>bliss</strong>. These layers are beautifully…<strong></strong><strong></strong></span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="10" data-listing-file-modified-sort="1735769883177" data-listing-reading-time-sort="3" data-listing-word-count-sort="522" data-listing-title-sort="The Three Body" data-listing-filename-sort="three_body.qmd">
-<td>
-<a href="../../posts/yoga/three_body.html" class="title listing-title">The Three Body</a>
-</td>
-<td>
-<span class="listing-description">The Doctrine of the Three Bodies: Our existence is composed of three interconnected bodies, each serving a unique purpose: the <strong>gross body</strong>, <strong>subtle body</strong>, and <strong>causal body</strong>.</span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="11" data-listing-file-modified-sort="1735769481998" data-listing-reading-time-sort="3" data-listing-word-count-sort="509" data-listing-title-sort="Ashtanga Yoga" data-listing-filename-sort="Ashtanga.qmd">
-<td>
-<a href="../../posts/yoga/Ashtanga.html" class="title listing-title">Ashtanga Yoga</a>
-</td>
-<td>
-<span class="listing-description">Ashtanga Yoga, as described by Patanjali, consists of <strong>eight interconnected limbs</strong> that work together to guide practitioners toward liberation (<em>kaivalya</em>). These limbs are not…</span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="12" data-listing-file-modified-sort="1735769871394" data-listing-reading-time-sort="3" data-listing-word-count-sort="562" data-listing-title-sort="Overview of Yoga" data-listing-filename-sort="overview_of_yoga.qmd">
-<td>
-<a href="../../posts/yoga/overview_of_yoga.html" class="title listing-title">Overview of Yoga</a>
-</td>
-<td>
-<span class="listing-description">The word <strong>Yoga</strong> (or Yog) is derived from the root <strong>Yuj</strong>, meaning <em>to yoke, harness, or join together</em>. Yoga signifies union—a union of the <strong>body</strong>, <strong>mind</strong>, and <strong>spirit</strong>.</span>
-</td>
-<td>
-<span class="listing-category">philosophy</span>
-</td>
-</tr>
-<tr data-index="13" data-listing-date-sort="1692676800000" data-listing-file-modified-sort="1735769959927" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="101" data-listing-title-sort="Workout Cheatsheet" data-listing-filename-sort="workout.qmd">
-<td>
-<a href="../../posts/yoga/workout.html" class="title listing-title">Workout Cheatsheet</a>
-</td>
-<td>
-<span class="listing-description">死虫、提踵动作要点 </span>
-</td>
-<td>
-<span class="listing-category">Asana</span>
-</td>
-</tr>
-</tbody>
-</table>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1736455219438" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+<a href="../../posts/yoga/philosophy/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../posts/yoga/philosophy/eight_limbs.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<div class="card-text listing-description">
+<p>The philosophy of Yoga practice</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

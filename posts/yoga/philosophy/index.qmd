@@ -1,0 +1,17 @@
+---
+title: ""
+image: eight_limbs.jpg
+image-height: 10px
+description: |
+  The philosophy of Yoga practice
+# subtitle: "️"
+listing:
+  contents: .
+  type: table
+  sort: "category desc"
+  fields: [title, description,category] #tags # Ensures the table has the listed fields
+  filter-ui: true
+# [Home](../../index.qmd) > [Posts](../../posts.qmd) > [Yoga Posts](index.qmd)
+#[← Back to Posts](../../posts.qmd)     
+---
+       

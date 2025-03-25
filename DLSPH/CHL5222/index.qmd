@@ -1,0 +1,17 @@
+---
+title: "CHL5222 Analysis of Correlated Data"
+description: |
+  
+author:
+  - name: Lin Yu
+    url: https://thisislinyu.github.io/
+date: 2024-03-04
+# date-modified: last-modified
+#bibliography: references.bib
+# categories: []
+image: longitudinal.jpg
+draft: false
+---
+
+-   My two-page [cheatsheet](CHL5222_Cheat_sheet.pdf)
+

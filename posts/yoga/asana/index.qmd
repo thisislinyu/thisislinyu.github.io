@@ -1,0 +1,15 @@
+---
+title: ""
+image: asana1.jpg
+image-height: 10px
+description: |
+  Asana cheatsheet
+# subtitle: "️"
+listing:
+  contents: .
+  type: table
+  sort: "category desc"
+  fields: [title, description,category] #tags # Ensures the table has the listed fields
+  filter-ui: true
+# [Home](../../index.qmd) > [Posts](../../posts.qmd) > [Yoga Posts](index.qmd)
+---
