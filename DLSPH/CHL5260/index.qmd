@@ -17,7 +17,7 @@ draft: false
 
 -   Second year:[2024/02/27 my first project](Feb27-2025_LinYu_updated.pdf)    
 
-- [SSC:](SSC2025_LinYu.pdf) 
+- [SSC materials](SSC2025_LinYu.pdf) 
 
-- [CSSC:](LinYu_CSSC_Poster.pdf)
+- [CSSC materials](LinYu_CSSC_Poster.pdf)
 
